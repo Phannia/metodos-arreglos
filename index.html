@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <!-- FONTAWESOME -->
+    <script src="https://kit.fontawesome.com/2356479ffa.js" crossorigin="anonymous"></script>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <!-- Título -->
+    <title>To do List</title>
+</head>
+<body>
+    <main>
+        <section class="todolist-box">
+            <div class="todolist-tittle">
+                <h1>To do List</h1>
+                <p class="date" id="date"></p>
+            </div>
+            <div class="todolist-newtask">
+                <label for="new-task">Nueva Tarea</label>
+                <div class="input-task">
+                    <input type="text" placeholder="Ingresa una nueva tarea" id="addnewtask">
+                    <button class="input-task-button btn btn-success" id="add-task">Agregar</button>
+                </div>
+            </div>
+            <section class="activity-task">
+                <div class="show-task">
+                    <div class="total-tasks">
+                        <h6>Total de tareas: <span id="quantitytodo">0</span></h6>
+                        <div class="total-number" id="total-number"></div>
+                    </div>
+                    <div class="done-tasks">
+                        <h6>Tareas realizadas: <span id="quantitydone">0</span></h6>
+                        <div class="done-task-number" id="done-tasks-number"></div>
+                    </div>
+                </div>
+                <section class="activity-log">
+                    <ul id="activity-log-list">
+                        <!-- <li>
+                            <i class="far fa-circle" data="done" id="0"></i>
+                            <p class="text">aquí va una tarea</p>
+                            <i class="fas fa-trash" data="deleted" id="0"></i>
+                        </li> -->
+                    </ul>
+                </section>
+            </section>
+            
+            
+            
+        </section>
+    </main>
+    <script src="./assets/js/index.js"></script>
+</body>
+</html>
