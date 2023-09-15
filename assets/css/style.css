@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 1px;
+}
+/* root de colores */
+:root {
+    --purple: #9a67ea;
+    --blue-dark: #2a73c2;
+    --green: #2c7b90;
+    --blue-light: #04d4c3;
+    --white: #fafafb;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, var(--blue-dark), var(--blue-light));
+}
+
+/* Estilo de la caja de tareas */
+.todolist-box{
+    height: 25rem;
+    width: 50rem;
+    border-radius: 10px;
+}
+
+/* Título de la lista  */
+.todolist-tittle{
+    padding: 1rem;
+    border-bottom: 1px solid var(--white);
+}
+
+/* Sección agregar nueva tarea */
+.todolist-newtask{
+    height: 8rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.todolist-newtask label{
+    font-weight: bolder;
+}  
+
+.todolist-newtask button:hover{
+    transform: scale(1.1);
+}
+
+/* Input y btn de la sección nueva tarea */
+.input-task{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 10px;
+    height: 3rem;
+    gap: 2rem;
+    width: 90%;
+}
+
+.input-task input{
+    width: 80%;
+    border-radius: 10px;
+}
+
+
+/* Total de tareas + lista de tareas */
+.activity-task{
+    display: flex;
+    padding: 2rem;
+}
+
+.show-task{
+    width: 40%;
+}
+
+.activity-log{
+    display: flex;
+    width: 100%;
+}
+
+.activity-log ul {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-log li{
+    display: flex;
+    justify-content: space-between;
+    background-color: var(--green);
+    color: var(--white);
+    border-radius: 10px;
+    height: 2.5rem;
+    width: 25rem;
+    padding: 7px;
+    margin: 5px 0;
+}
+
+.activity-log i {
+    display: flex;
+    align-items: center;
+}
+
+.activity-log i:hover {
+    color: var(--blue-light)
+}
+
+.activity-log ul li p{
+    font-size: 1.2rem;
+}
+
+.line-through {
+    text-decoration: line-through;
+    color: var(--white);
+}
